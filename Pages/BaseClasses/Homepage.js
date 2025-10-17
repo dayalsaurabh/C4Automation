@@ -2,7 +2,8 @@ class Homepage{
     constructor(page)
     {
         this.page=page
-        this.iconPatient=page.getByTestId('Patients').nth(1)
+        //this.iconPatient=page.getByTestId('Patients').nth(1)
+        this.iconPatient= page.locator('//div[@data-testid="moduleDrawerPatients"]')
         this.sidebarPatientIcon=page.locator("xpath=//img[@alt='Patients Image Avatar']")
         this.iconHomePage=page.locator("xpath=//img[@alt='homeDashboard']")
         this.iconAppointment=page.getByTestId('Appointments').nth(1)
